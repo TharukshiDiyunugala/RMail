@@ -1,5 +1,9 @@
+package login_signup;
+
+import Client.Dashboard;
+
 import javax.swing.*;
-import java.awt.Image;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +16,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
 
         // Resize the RMail.png logo
-        ImageIcon icon = new ImageIcon(getClass().getResource("RMail.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("../Assets/RMail.png"));
         Image image = icon.getImage().getScaledInstance(232, 142, Image.SCALE_AREA_AVERAGING);
         ImageIcon scaledIcon = new ImageIcon(image);
         jLabel5.setIcon(scaledIcon);
@@ -48,7 +52,7 @@ public class Login extends javax.swing.JFrame {
         Right.setBackground(new java.awt.Color(255, 87, 51));
         Right.setPreferredSize(new java.awt.Dimension(400, 500));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RMail.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/RMail.png"))); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Showcard Gothic", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -112,7 +116,7 @@ public class Login extends javax.swing.JFrame {
         jLogInBtn.setBackground(new java.awt.Color(255, 87, 51));
         jLogInBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLogInBtn.setForeground(new java.awt.Color(255, 255, 255));
-        jLogInBtn.setText("Login");
+        jLogInBtn.setText("Log In");
         jLogInBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jLogInBtnActionPerformed(evt);

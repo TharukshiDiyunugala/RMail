@@ -1,3 +1,5 @@
+package login_signup;
+
 import javax.swing.*;
 import java.awt.*;
 import java.sql.Connection;
@@ -9,7 +11,7 @@ public class SignUp extends javax.swing.JFrame {
         initComponents();
 
         // Resize the RMail.png logo
-        ImageIcon icon = new ImageIcon(getClass().getResource("RMail.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("../Assets/RMail.png"));
         Image image = icon.getImage().getScaledInstance(232, 142, Image.SCALE_AREA_AVERAGING);
         ImageIcon scaledIcon = new ImageIcon(image);
         jLabel1.setIcon(scaledIcon);
@@ -47,7 +49,7 @@ public class SignUp extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 87, 51));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RMail.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/RMail.png"))); // NOI18N
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
